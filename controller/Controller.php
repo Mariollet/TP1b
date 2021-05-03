@@ -37,6 +37,7 @@ class Controller
 
     if (preg_match($pattern_section, $path, $matches, PREG_OFFSET_CAPTURE)) {
       if (isset($matches[1][0])) {
+        $GLOBALS["type"] = $matches[1][0];
         return Model::getSection($matches[1][0]);
       }
     }

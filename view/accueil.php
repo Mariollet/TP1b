@@ -20,14 +20,14 @@
     <div class="container p-4">
       <h1 class="text-center m-4">Bienvenue sur LEARNWEB</h1>
       <h2 class="h4 text-muted text-center m-4">
-        Ce site web est un exercice Php/Html/Css pour la mise en place
+        Ce site web est un exercice Php/Html/Bootstrap pour la mise en place
         d'un back-office qui permet, en s'inpirant d'une architecture MVC,
-        d'ajouter, de supprimer et modifier des articles
+        d'ajouter, de supprimer et modifier les données d'une BDD.
       </h2>
 
       <div class="card">
         <div class="card-header">
-          <h3>Tous mes articles :</h3>
+          <h3>Tous les articles :</h3>
         </div>
       </div>
 
@@ -63,6 +63,9 @@
         </section>
 
       <?php endwhile ?>
+
+      <a href="/view/createnode.php" class="btn btn-block btn-lg btn-outline-success">Créer un Node</a>
+
     </div>
 
   </main>

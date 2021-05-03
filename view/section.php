@@ -17,7 +17,7 @@
     <div class="container p-4">
     <div class="card">
         <div class="card-header">
-          <h3>Rubriques :</h3>
+          <h3>Rubriques : <b class="text-uppercase"><?= $GLOBALS["type"]?></b></h3>
         </div>
       </div>
             <hr>
@@ -33,6 +33,9 @@
         </section>
 
       <?php endwhile ?>
+      
+    <a href="/view/createnode.php" class="btn btn-block btn-lg btn-outline-success">Créer un Node</a>
+
     </div>
 
   </main>
