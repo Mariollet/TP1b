@@ -46,6 +46,7 @@ class Route
   public static function initRoutes(){
     // Route qui permet de voir un node (/node/xxx)
     self::add("~^/node/[0-9]+/?$~","GET","node.php","getNode");
+    self::add("~^/type/[a-z]+/?$~","GET","section.php","getSection");
   }
 
 }

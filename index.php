@@ -6,7 +6,6 @@ Route::initRoutes();
 // Récupération du controller
 require_once($_SERVER["DOCUMENT_ROOT"] . "/controller/Controller.php");
 
-
 if (isset($_POST["nid"])) {
   Model::updateNode();
 }
@@ -33,7 +32,6 @@ if ($route) {
 
   // Appel du template
   require_once($_SERVER["DOCUMENT_ROOT"] . "/view/" . $route["view_name"]);
-}
-else {
-  require_once($_SERVER["DOCUMENT_ROOT"] . "/view/index.php");
+} else {
+  require_once($_SERVER["DOCUMENT_ROOT"] . "/view/accueil.php");
 }

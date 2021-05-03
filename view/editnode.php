@@ -29,17 +29,19 @@ $record = Model::getNode($_GET["nid"]);
         <div class="card-body col-10 align-self-center">
           <form action="./../index.php" method="POST" class="form d-flex flex-column">
 
-            <label for="type">Type</label>
-            <input list="types" value="<?= $record['type'] ?>" name="type" id="type">
-            <datalist id="types">
-              <option value="article">
-            </datalist>
+          <label for="type">Type</label>
+            <select class="form-control" name="type" id="type">
+              <option value="html">Html</option>
+              <option value="css">Css</option>
+              <option value="js">Js</option>
+              <option value="php">Php</option>
+            </select>
 
             <label for="title">Titre</label>
             <input type="text" value="<?= $record['title'] ?>" name="title">
 
             <label for="body">Corps</label>
-            <textarea name="body"><?= $record['body'] ?></textarea>
+            <textarea name="body" rows="10"><?= $record['body'] ?></textarea>
 
             <label for="summary">Résumé</label>
             <textarea name="summary"><?= $record['summary'] ?></textarea>

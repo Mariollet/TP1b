@@ -32,16 +32,18 @@ require_once($_SERVER["DOCUMENT_ROOT"] . "/model/Model.php");
           <form action="./../index.php" method="POST" class="form d-flex flex-column">
 
             <label for="type">Type</label>
-            <input list="types" name="type" id="type">
-            <datalist id="types">
-              <option value="article">
-            </datalist>
+            <select class="form-control" name="type" id="type">
+              <option value="html">Html</option>
+              <option value="css">Css</option>
+              <option value="js">Js</option>
+              <option value="php">Php</option>
+            </select>
 
             <label for="title">Titre</label>
             <input type="text" name="title">
 
             <label for="body">Corps</label>
-            <textarea name="body"></textarea>
+            <textarea name="body" rows="10"></textarea>
 
             <label for="summary">Résumé</label>
             <textarea name="summary"></textarea>

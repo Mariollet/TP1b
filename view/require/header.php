@@ -6,17 +6,17 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav px-4">
-      <li class="nav-item active">
-        <a class="nav-link h5" href="/">HTML</a>
+      <li class="nav-item">
+        <a class="nav-link h5" href="/type/html">HTML</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link h5" href="/">CSS</a>
+        <a class="nav-link h5" href="/type/css">CSS</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link h5" href="/">JS</a>
+        <a class="nav-link h5" href="/type/js">JS</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link h5" href="/">PHP</a>
+        <a class="nav-link h5" href="/type/php">PHP</a>
       </li>
     </ul>
     <a href="/view/createnode.php" class=" ml-auto btn btn-lg btn-outline-success">Créer un Node</a>

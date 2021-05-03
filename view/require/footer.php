@@ -17,21 +17,21 @@
       <!--Grid column-->
 
       <!--Grid column-->
-      <div class="col-6 mb-4 mb-md-0">
-        <h5 class="text-uppercase">Learn</h5>
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase">LearnWeb</h5>
 
         <ul class="list-unstyled mb-0">
           <li>
-            <a href="/" class="text-dark">HTML</a>
+            <a href="/type/html" class="text-dark">HTML</a>
           </li>
           <li>
-            <a href="/" class="text-dark">CSS</a>
+            <a href="/type/css" class="text-dark">CSS</a>
           </li>
           <li>
-            <a href="/" class="text-dark">JS</a>
+            <a href="/type/js" class="text-dark">JS</a>
           </li>
           <li>
-            <a href="/" class="text-dark">PHP</a>
+            <a href="/type/php" class="text-dark">PHP</a>
           </li>
         </ul>
       </div>
@@ -43,7 +43,7 @@
 
   <!-- Copyright -->
   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-    © 2021 Copyright: Diginamic
+    © 2021 Copyright: SomaDev
   </div>
   <!-- Copyright -->
 </footer>

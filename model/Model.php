@@ -29,6 +29,40 @@ class Model
     $req = $pdo->query($sql);
     return $req;
   }
+  public static function getSection($type)
+  {
+    $pdo = self::getPDOInstance();
+    // Récupération de la données via une requête préparée
+    // Paramètres de la requête préparée
+    $data = [
+      'type' => $type
+    ];
+    // Requête préparée
+    $req = $pdo->prepare('SELECT * FROM node WHERE type = :type');
+
+    //Execution de la requête
+    $req->execute($data);
+
+    // Récupération de la donnée
+    return $req;
+  }
+  public static function getNode($nid)
+  {
+    $pdo = self::getPDOInstance();
+    // Récupération de la données via une requête préparée
+    // Paramètres de la requête préparée
+    $data = [
+      'nid' => $nid
+    ];
+    // Requête préparée
+    $req = $pdo->prepare('SELECT * FROM node WHERE nid = :nid');
+
+    //Execution de la requête
+    $req->execute($data);
+
+    // Récupération de la donnée
+    return $req->fetch(PDO::FETCH_ASSOC);
+  }
   public static function updateNode()
   {
     $pdo = self::getPDOInstance();
@@ -56,29 +90,12 @@ class Model
       echo "Pb de requête", $e->getMessage();
     }
   }
-  public static function getNode($nid)
-  {
-    $pdo = self::getPDOInstance();
-    // Récupération de la données via une requête préparée
-    // Paramètres de la requête préparée
-    $data = [
-      'nid' => $nid
-    ];
-    // Requête préparée
-    $req = $pdo->prepare('SELECT * FROM node WHERE nid = :nid');
-
-    //Execution de la requête
-    $req->execute($data);
-
-    // Récupération de la donnée
-    return $req->fetch(PDO::FETCH_ASSOC);
-  }
   public static function addNode()
   {
     $pdo = self::getPDOInstance();
     try {
       $data = [
-        'type' => 'article',
+        'type' => $_POST["type"],
         'title' => $_POST["title"],
         'summary' => $_POST["summary"],
         'seo_title' => $_POST['seo_title'],
