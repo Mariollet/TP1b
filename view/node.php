@@ -16,6 +16,7 @@
         <div class="card-header">
           <h2>
             <?= $GLOBALS["data"]["title"] ?>
+            <a href="/type/<?= $GLOBALS["data"]["type"] ?>" class="badge badge-light float-right text-capitalize"><?= $GLOBALS["data"]["type"] ?></a>
           </h2>
         </div>
         <div class="card-body">
