@@ -44,6 +44,44 @@
 
       </ul>
 
+    <?php elseif (isset($GLOBALS["data"]["type"])) : ?>
+
+      <ul class="navbar-nav px-4">
+
+        <li class="nav-item">
+          <?php if ($GLOBALS["data"]["type"] == "html") : ?>
+            <a class="nav-link active h5" href="/type/html">HTML</a>
+          <?php else : ?>
+            <a class="nav-link h5" href="/type/html">HTML</a>
+          <?php endif ?>
+        </li>
+
+        <li class="nav-item">
+          <?php if ($GLOBALS["data"]["type"] == "css") : ?>
+            <a class="nav-link active h5" href="/type/css">CSS</a>
+          <?php else : ?>
+            <a class="nav-link h5" href="/type/css">CSS</a>
+          <?php endif ?>
+        </li>
+
+        <li class="nav-item">
+          <?php if ($GLOBALS["data"]["type"] == "js") : ?>
+            <a class="nav-link active h5" href="/type/js">JS</a>
+          <?php else : ?>
+            <a class="nav-link h5" href="/type/js">JS</a>
+          <?php endif ?>
+        </li>
+
+        <li class="nav-item">
+          <?php if ($GLOBALS["data"]["type"] == "php") : ?>
+            <a class="nav-link active h5" href="/type/php">PHP</a>
+          <?php else : ?>
+            <a class="nav-link h5" href="/type/php">PHP</a>
+          <?php endif ?>
+        </li>
+
+      </ul>
+
     <?php else : ?>
 
       <ul class="navbar-nav px-4">
