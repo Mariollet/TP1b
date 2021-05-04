@@ -6,19 +6,17 @@
     <div class="row">
       <!--Grid column-->
       <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-        <h5 class="text-uppercase">Footer Content</h5>
+        <h5 class="text-uppercase">LEARNWEB</h5>
 
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
-          molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
-          voluptatem veniam, est atque cumque eum delectus sint!
+        Ce site web est un exercice Php/Html/Bootstrap pour la mise en place d'un back-office qui permet, en s'inpirant d'une architecture MVC, d'ajouter, de supprimer et modifier les données d'une BDD.
         </p>
       </div>
       <!--Grid column-->
 
       <!--Grid column-->
       <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-        <h5 class="text-uppercase">LearnWeb</h5>
+        <h5 class="text-uppercase">Rubriques</h5>
 
         <ul class="list-unstyled mb-0">
           <li>

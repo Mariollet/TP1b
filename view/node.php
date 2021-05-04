@@ -10,9 +10,9 @@
 
   </header>
   <main>
-
-    <div class="container p-4">
-      <section class="card my-4">
+  <br><br><br>
+    <div class="container my-4">
+      <section class="card">
         <div class="card-header">
           <h2>
             <?= $GLOBALS["data"]["title"] ?>
@@ -20,10 +20,10 @@
           </h2>
         </div>
         <div class="card-body">
-          <p class="p-4"><?= $GLOBALS["data"]["body"] ?></p>
+          <?= $GLOBALS["data"]["body"] ?>
         </div>
         <div class="card-footer">
-          <a class="btn btn-info m-1" href="/index.php">Retour</a>
+          <a class="btn btn-primary m-1" href="/index.php">Retour</a>
           <a class="btn btn-outline-warning m-1" href="/view/editnode.php?nid=<?= $GLOBALS["data"]["nid"] ?>">Modifier</a>
 
           <!-- Button trigger modal -->
@@ -44,8 +44,8 @@
                   Voulez-vous vraiment supprimer l'article <b><?= $GLOBALS["data"]['type'] ?></b> : <i>"<?= $GLOBALS["data"]['title'] ?>"</i> ?
                 </div>
                 <div class="modal-footer">
-                  <a class="btn btn-danger m-1" href="/index.php?nid=<?= $GLOBALS["data"]["nid"] ?>&type=<?= $GLOBALS["data"]["type"] ?>&title=<?= $GLOBALS["data"]["title"] ?>&delete_node=true">Supprimer</a>
-                  <button type="button" class="btn btn-outline-info" data-dismiss="modal">Retour</button>
+                  <a class="btn btn-danger m-1" href="/index.php?nid=<?= $GLOBALS["data"]["nid"] ?>&type=<?= $GLOBALS["data"]["type"] ?>&title=<?= $GLOBALS["data"]["title"] ?>">Supprimer</a>
+                  <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Retour</button>
                 </div>
               </div>
             </div>

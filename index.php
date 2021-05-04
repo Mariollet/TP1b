@@ -14,7 +14,7 @@ if (isset($_POST["create_node"])) {
   Model::addNode();
 }
 
-if (isset($_GET["delete_node"])) {
+if (isset($_GET["nid"])) {
   Model::deleteNode();
 }
 
