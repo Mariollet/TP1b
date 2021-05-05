@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark p-2">
-  <a class="navbar-brand text-center btn btn-outline-primary" href="/">Learn<br>Web</a>
+<nav role="navigation" class="navbar navbar-expand-md fixed-top navbar-dark bg-dark p-2">
+  <a class="navbar-brand text-center btn btn-outline-primary" href="/">Cooper<br>Web</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>

@@ -4,12 +4,12 @@
 <?php require_once(__DIR__ . "./require/head.php") ?>
 
 <body>
-  <header>
+  <header role="banner">
 
     <?php require_once(__DIR__ . "./require/header.php") ?>
 
   </header>
-  <main>
+  <main role="main">
   <br><br><br>
     <div class="container my-4">
       <section class="card">

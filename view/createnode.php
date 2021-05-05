@@ -15,12 +15,12 @@ require_once($_SERVER["DOCUMENT_ROOT"] . "/model/Model.php");
 </head>
 
 <body>
-  <header>
+  <header role="banner">
 
     <?php require_once(__DIR__ . "./require/header.php") ?>
 
   </header>
-  <main>
+  <main role="main">
     <br><br><br>
     <div class="container p-4">
       <div class="card">

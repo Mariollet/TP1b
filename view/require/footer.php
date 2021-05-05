@@ -6,7 +6,7 @@
     <div class="row">
       <!--Grid column-->
       <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-        <h5 class="text-uppercase">LEARNWEB</h5>
+        <h5 class="text-uppercase">CooperWeb</h5>
 
         <p>
         Ce site web est un exercice Php/Html/Bootstrap pour la mise en place d'un back-office qui permet, en s'inpirant d'une architecture MVC, d'ajouter, de supprimer et modifier les données d'une BDD.
